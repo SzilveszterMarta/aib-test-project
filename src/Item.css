@@ -1,0 +1,9 @@
+.item {
+    cursor: pointer;
+    border: 1px solid #eee;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+}
