@@ -6,16 +6,18 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Instructions to run the application
 
-In the project directory, you can run:
+First of all, you have to check the value of `useFakeDatabase` variable in src/config/config.js file. If false, api urls will point to Coingecko public api. Else api urls will point to a local fake server.
 
-### `npm install` and `npm start`
+In the first case, Coingecko api is used to fetch data. This is the free version, you can exceed the number of request pretty quickly. If you want to try, hit `npm install` and `npm start`.
+
+Or you can set the previously mentioned variable's value to false and the app will use the fake server which returns the content of `db.json` located inside the database directory. After this: `npm install`, `npm run server:start` and in a separate terminal `npm start`.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Areas to improve
 
-Adding more styles to improve the look of the application, using SCSS instead of plain css.
+Adding more styles to improve the look of the application.
 
 Adding a loading screen while we are waiting for the API response.
 

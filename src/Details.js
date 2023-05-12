@@ -1,7 +1,8 @@
 import {useLocation} from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import './Details.css';
+import './styles/Details.scss';
 import { useNavigate } from 'react-router-dom';
+import { baseUrl, itemParams } from './config/config';
 
 const Details = () => {
     const location = useLocation();
@@ -9,7 +10,7 @@ const Details = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch(`https://api.coingecko.com/api/v3/coins/${location.state.id}`)
+        fetch(`${baseUrl}${itemParams || location.state.id}`)
             .then((response) => response.json())
             .then((data) => {
                 console.log('data', data);

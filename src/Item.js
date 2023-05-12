@@ -1,4 +1,4 @@
-import './Item.css';
+import './styles/Item.scss';
 import { useNavigate } from 'react-router-dom';
 
 const Item = (props) => {
