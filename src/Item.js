@@ -8,8 +8,8 @@ const Item = (props) => {
         <img src={coin.image} className='item__img' />
         <h2 className='item__title'>{coin.name} - {coin.symbol}</h2>
         <p className='item__desc'>Current price: {coin.current_price}</p>
-        <p className='item__desc'>Highest price: {coin.high_24h}</p>
-        <p className='item__desc'>Lowest price: {coin.low_24h}</p>
+        <p className='item__desc'>Highest price: <span className='item__desc--highest'>{coin.high_24h}</span></p>
+        <p className='item__desc'>Lowest price: <span className='item__desc--lowest'>{coin.low_24h}</span></p>
     </div>
 };
 

@@ -17,8 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Areas to improve
 
-Adding more styles to improve the look of the application.
-
-Adding a loading screen while we are waiting for the API response.
-
 Covering the logic with unit test.

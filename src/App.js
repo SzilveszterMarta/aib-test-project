@@ -7,6 +7,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1 className='main-title'>Coin finder</h1>
       <Routes>
           <Route path="/" element={<List />} />
           <Route path="/list" element={<List />} />

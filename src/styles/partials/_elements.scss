@@ -1,0 +1,15 @@
+@import './settings';
+
+body {
+    font-family: $base-font;
+    background-color: $bg-light;
+    color: $text-light;
+}
+
+p, span {
+    font-family: $paragraph-font,
+}
+
+a {
+    color: $accent;
+}
